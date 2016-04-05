@@ -484,3 +484,10 @@ footer .footer-below {
 body {
     margin-bottom: 70px;
 }
+
+/* Chickita Styles*/
+div[id^="chitikaAdBlock-"] {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+}
