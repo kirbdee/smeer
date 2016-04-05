@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle center-block" src="<%= data.userProfile%>"/>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-xs-12"><h3><%= data.userName%><i class="verified fa fa-check-circle-o"></i></span></h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><p><strong><%= data.userFullName%></strong></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><p><%= data.userBiography%></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><a href="<%= data.userLink%>"><%= data.userLink%></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4"><p><%= data.numPosts%></p><h6>posts</h6></div>
+                    <div class="col-xs-4"><p><%= data.followed_by%></p><h6>followers</h6></div>
+                    <div class="col-xs-4"><p><%= data.follows%></p><h6>following</h6></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

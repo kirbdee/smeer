@@ -1,0 +1,19 @@
+<form name="sentMessage" id="usersearch" onsubmit="getUser()">
+    <div class="row">
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Username" id="username" required data-validation-required-message="Please enter a username">
+                              <span class="input-group-btn">
+                            <button type="submit" class="btn btn-success btn-lg">search</button>
+                              </span>
+        </div><!-- /input-group -->
+    </div>
+    <script>
+        function getUser(){
+            event.preventDefault();
+            var user = document.getElementById('username').value;
+            if(typeof user !== 'undefined' && user !== '') {
+                window.location.pathname = "/users/" + user;
+            }
+        }
+    </script>
+</form>

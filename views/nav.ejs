@@ -1,0 +1,13 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand" href="/">smeer</a>
+            <%if (typeof withSearch !== 'undefined' && withSearch === true) {%>
+            <%- include('searchField'); %>
+            <% } %>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</nav>

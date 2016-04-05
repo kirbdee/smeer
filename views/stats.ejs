@@ -1,0 +1,36 @@
+<section class="success">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center big"><h1><%= data.estWorth%></h1><p>Estimated Worth</p></div>
+            <div class="col-md-4 text-center big"><h1><%= data.engagementRate%></h1><p>Engagement</p></div>
+            <div class="col-md-4 text-center big"><h1><%= data.smeerscore%></h1><p>Smeer Score</p></div>
+        </div>
+    </div>
+</section>
+<section class="success" id="details">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="detail-item">
+                    <p><strong>Cost Per Post</strong><%= data.postCost%></p>
+                </div>
+                <div class="detail-item">
+                    <p><strong>Estimated Monthly Revenue</strong><%= data.monthlyRev%></p>
+                </div>
+                <div class="detail-item">
+                    <p><strong>Estimated Annual Revenue</strong><%= data.annualRev%></p>
+                </div>
+                <div class="detail-item">
+                    <p><strong>Avg Likes Per Post</strong><%= data.postCost%></p>
+                </div>
+                <div class="detail-item">
+                    <p><strong>Avg Monthly Engagement</strong><%= data.monthlyLike%></p>
+                </div>
+                <div class="detail-item">
+                    <p><strong>Avg Annual Engagement</strong><%= data.yearlyLike%></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
