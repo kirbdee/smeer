@@ -6,7 +6,11 @@
             </div>
             <div class="col-sm-8">
                 <div class="row">
-                    <div class="col-xs-12"><h3><%= data.userName%><i class="verified fa fa-check-circle-o"></i></span></h3></div>
+                    <div class="col-xs-12"><h3><%= data.userName%>
+                            <% if (data.userVerified) {%>
+                            <span><i class="verified fa fa-check-circle-o"></i></span>
+                            <%}%>
+                        </h3></div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12"><p><strong><%= data.userFullName%></strong></p></div>

@@ -5,7 +5,9 @@
         <div class="navbar-header page-scroll">
             <a class="navbar-brand" href="/">smeer</a>
             <%if (typeof withSearch !== 'undefined' && withSearch === true) {%>
-            <%- include('searchField'); %>
+            <div class="container">
+                <%- include('searchField'); %>
+            </div>
             <% } %>
         </div>
     </div>
