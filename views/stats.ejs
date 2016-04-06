@@ -1,5 +1,11 @@
 <section class="success">
     <div class="container">
+        <% if(data.is_private) {%>
+            <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Note!</strong> Private account estimations are not available.
+            </div>
+        <%}%>%>
         <div class="row">
             <div class="col-md-4 text-center big"><h1><%= data.estWorth%></h1><p>Estimated Worth</p></div>
             <div class="col-md-4 text-center big"><h1><%= data.engagementRate%></h1><p>Engagement</p></div>
