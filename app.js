@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+__GLOBAL_ENV__ = require('./conf/conf');
+
 var app = express();
 
 // view engine setup
